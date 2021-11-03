@@ -1,5 +1,5 @@
 body{
-    background-image: url("/img/fondo.jpg");
+    background-image: url("img/fondo.jpg");
 }
 form{
     width: 100%;
@@ -81,7 +81,7 @@ background-color: teal;
 .botones{
     background-color: #10ad7e;
     color: black;
-    width: 20%;
+    width: 28%;
     height: 40px;
     text-align: center;
     border: solid 1px white;
@@ -116,10 +116,6 @@ input{
  input:hover,#pregunta1:hover{
      background-color: rgb(201, 201, 201);
  }
-.container-botones{
-    display: flexbox; 
-    flex-direction:column;
-    }
 #date{
     text-align: center;
 }
