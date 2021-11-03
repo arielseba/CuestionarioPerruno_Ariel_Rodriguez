@@ -31,6 +31,7 @@ enviar.addEventListener("click",()=>{
       preguntasSinResponder=preguntasSinResponder1.replace(/,/g,"-");
       swal("Las siguientes preguntas se encuentran sin responder: ", " "+ preguntasSinResponder , "warning");
   }
+
 })
 
 let siguiente=document.getElementById("siguiente");
@@ -73,7 +74,7 @@ anterior.addEventListener("click",()=>{
   }
   if(pagina==1)
   {
-    parte1.style.display="block";
+    parte1.style.display="none";
     parte2.style.display="block";
     parte3.style.display="none";
     enviar.style.display="none";

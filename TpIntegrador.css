@@ -130,11 +130,11 @@ select{
     text-align: center;
 }
 .check{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap:nowrap;   
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap:wrap;   
     align-items: center;
-    width: 40%;
+    width: 32%;
 }
 #p7a,#p7b,#p7c,#p7d,#p7e,#p7f{
     width: 25px;
