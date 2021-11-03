@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="TpIntegrador.css">
+    <link rel="icon" href="/img/favicon.png" >
+    <title>Cuestionario</title>
+</head>
+<body>
+    <form action="post">
+        <h1 id="titulo">Cuestionario</h1>
+        <p class ="subtitulo">Cada pregunta respondida de forma correcta suma 1 punto </p>
+            
+        <div class="parte1" id="parte1">
+            <div class="preguntas">
+                <p>1- ¿Porque sacan tanto la lengua los perros?</p><!--Para regular su temperatura corporal-->
+                <img  src="/img/1.jpg" alt=""><br>
+                <div class="container-botones">
+                    <select name="pregunta1" id="pregunta1">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Para mostrar su júbilo o carácter afable</option>
+                        <option value="2">Es un gesto inconsciente como respirar</option>
+                        <option value="3">Para regular su temperatura corporal</option>
+                    </select>
+                    <input type="button" id="botonConfirmar1" value="Confirmar">
+                </div>
+            </div>
+           
+            <div class="preguntas " >
+                <p>2- ¿En que fecha se estreno la famosa pelicula Lassie?</p> <!--22 /07/1994 -->
+                <img src="/img/2.jpg" alt=""><br>
+                <div class="container-botones">
+                  <input type="date" name="vinculo" id="pregunta2" >
+                  <input type="button" id="botonConfirmar2" value="Confirmar">
+                </div>
+            </div>
+        
+            <div class="preguntas ">
+                <p>3- ¿Cuántas palabras humanas pueden entender los perros?</p><!--Mas de 150 palabras-->
+                <img src="/img/3.jpg" alt=""><br>
+                <div class="container-botones">
+                    <input type="button" name="palabras" id="p3a" value="Ninguna">
+                    <input type="button" name="palabras" id="p3b" value="Mas de 150 palabras">
+                    <input type="button" name="palabras" id="p3c" value="Mas de 225 palabras">
+                </div>
+            </div>
+        </div>
+        
+        <div class="parte2" id="parte2">
+            <div class="preguntas ">
+                <p>4- ¿Dormir con perros empeora la calidad del sueño?</p><!--Falso-->
+                <img src="/img/4.jpg" alt=""><br> 
+                <div class="container-botones">
+                    <input type="button" name="dormir" id="p4a" value="Verdadero">
+                    <input type="button" name="dormir" id="p4b" value="Falso">
+               </div>
+            </div>
+
+            <div class="preguntas ">
+                <p>5- ¿No es raro ver a un perro bostezar pero... ¿por qué lo hacen?</p><!--Por empatia con los eres humanos-->
+                <img src="/img/5.jpg" alt=""><br> 
+                <div class="container-botones">
+                    <input type="button" name="bostezo" id="p5a" value="Por empatía con los seres humanos">
+                    <input type="button" name="bostezo" id="p5b" value="Para regular su temperatura corporal">
+                    <input type="button" name="bostezo" id="p5c" value="Para conseguir una recompensa o snack">
+                </div>
+            </div>
+        
+            <div class="preguntas ">
+              <p>6- ¿Los perros pueden donar sangre?</p><!--Verdadero-->
+              <img src="/img/6.jpg" alt=""><br> 
+              <div class="container-botones">
+                <input type="button" name="sangre" id="p6a" value="Verdadero">
+                <input type="button" name="sangre" id="p6b" value="Falso">
+              </div>
+            </div>
+        
+            <div class="preguntas ">
+                <p>7- ¿Cuál de estos alimentos no debería comer una mascota?</p><!--Carne cruda, Galletas, Chocolate-->
+                <img src="/img/7.jpg" alt=""><br> 
+                
+                   <div class="check"> <input type="checkbox" id="p7a" value="1">Carne Cruda</div>
+                   <div class="check"> <input type="checkbox" id="p7b" value="2">Macarrones</div>
+                   <div class="check"> <input type="checkbox" id="p7c" value="3">Pollo</div>
+                   <div class="check"> <input type="checkbox" id="p7d" value="4">Bife</div>
+                   <div class="check"> <input type="checkbox" id="p7e" value="5">Galletas</div>
+                   <div class="check"> <input type="checkbox" id="p7f" value="6">Chocolate</div>
+                
+                <div> <input type="button" id="botonConfirmar3" value="Confirmar"></div>
+            </div>
+        </div>
+
+        <div class="parte3" id="parte3">
+            <div class="preguntas ">
+                <p>8- Tener perro es bueno para el corazón</p><!--Verdadero-->
+                <img src="/img/8.jpg" alt=""><br> <br>
+                <div class="container-botones">
+                    <input type="button" name="corazon"  id="p8a" value="Verdadero">
+                    <input type="button" name="corazon"  id="p8b" value="Falso">
+                </div>
+            </div>
+         
+            <div class="preguntas ">
+                <p>9- Los perros domesticos surgieron...</p><!--Hacer 12000 años-->
+                <img src="/img/9.jpg" alt=""><br> <br>
+                <div class="container-botones">
+                    <input type="button" name="domesticos"  id="p9a" value="Hace 12.000 años">
+                    <input type="button" name="domesticos"  id="p9b" value="Hace 16.000 años">
+                    <input type="button" name="domesticos"  id="p9c" value="Hace 18.000 años">
+                </div>
+            </div>
+          
+            <div class="preguntas ">
+                <p>10- Los perros tienen el cerebro igual de grande que los gatos</p><!--Falso-->
+                <img src="/img/10.jpg" alt=""><br> <br>
+                <div class="container-botones">
+                    <input type="button" name="cerebro" id="p10a" value="Verdadero">
+                    <input type="button" name="cerebro" id="p10b" value="Falso">
+                </div>
+            </div>
+        </div>
+        
+        <div class="botones_contenedor" id="antSig">
+            <input class="botones" type="button" id="anterior"  value="Anterior">
+            <input class="botones" type="button" id="siguiente" value="Siguiente">
+            <input class="botones" type="button" id="enviar"    value="Enviar">
+        </div>
+           
+    </form>
+
+    <p class ="subtitulo" id="mostrarPuntaje">Su puntaje se mostrara aqui una vez finalizado el cuestionario </p>
+    <script src="coloresSeleccion.js"></script>
+    <script src="Enviar.js"></script>
+</body>
+</html>
