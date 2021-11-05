@@ -49,6 +49,10 @@ if(pagina==1)
   parte3.style.display="none";
   enviar.style.display="none";
   siguiente.style.display="block";
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    })
 }
 if(pagina==2)
 {
@@ -57,6 +61,10 @@ if(pagina==2)
   parte3.style.display="block";
   enviar.style.display="block"
   siguiente.style.display="none";
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  })
 }
 })
 anterior.addEventListener("click",()=>{
@@ -71,6 +79,10 @@ anterior.addEventListener("click",()=>{
     parte3.style.display="none";
     enviar.style.display="none";
     siguiente.style.display="block";
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    })
   }
   if(pagina==1)
   {
@@ -79,6 +91,10 @@ anterior.addEventListener("click",()=>{
     parte3.style.display="none";
     enviar.style.display="none";
     siguiente.style.display="block";
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    })
   }
   if(pagina==2)
   {
@@ -87,5 +103,9 @@ anterior.addEventListener("click",()=>{
     parte3.style.display="block";
     enviar.style.display="block";
     siguiente.style.display="none";
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    })
   }
 })
